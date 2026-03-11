@@ -1,6 +1,6 @@
 import { readFile } from "node:fs/promises";
 import { MutexoServerCliArgs, MutexoServerConfig } from "./MutexoServerConfig";
-import { defaultAddrs, defaultConfigPath, defaultHttpPort, defaultIngoreDotenv, defaultLocalConfigPath, defaultNetwork, defaultPortRange, defaultThreads, defaultWssPorts } from "../cli/defaults";
+import { defaultAddrs, defaultConfigPath, defaultHttpPort, defaultIngoreDotenv, defaultLocalConfigPath, defaultNetwork, defaultPortRange, defaultThreads, defaultWssPorts } from "../defaults";
 import { AddressStr } from "@harmoniclabs/cardano-ledger-ts";
 import { isAddrStr } from "../utils/isAddrStr";
 import { existsSync } from "node:fs";

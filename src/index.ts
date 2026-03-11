@@ -1,12 +1,12 @@
-#!/usr/bin/env node
+#!/usr/bin/env bun
 import { Command } from "commander";
 import { defaultConfigPath, defaultIngoreDotenv, defaultNetwork, defaultHttpPort, defaultWssPorts, defaultPortRange, defaultThreads, defaultPortRangeStr, defaultAddrs } from "./defaults";
-import { isAddrStr } from "../utils/isAddrStr";
+import { isAddrStr } from "./utils/isAddrStr";
 import { parseCliArgs } from "../MutexoServerConfig/parseCliArgs";
 import { main } from "../main";
 import { CardanoNetworkMagic } from "@harmoniclabs/ouroboros-miniprotocols-ts";
-import { strIsInt } from "../utils/strIsInt";
-import { logger } from "../utils/Logger";
+import { strIsInt } from "./utils/strIsInt";
+import { logger } from "./utils/Logger";
 
 const progName = "mutexo-server";
 const progVersion = "0.1.0";
